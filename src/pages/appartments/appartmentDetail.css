@@ -1,0 +1,201 @@
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+.appartmentdetail-conatiner {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    
+}
+
+.card-imageconatiner2 {
+    width: 350px;
+    height: 486px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-image2 {
+    width: 350px;
+    height: 486px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.mostliked-text-detail {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFFFFF;
+    padding: 2px 10px;
+    border-radius: 16px;
+    color: #444444;
+    font-size: 10px;
+    font-family: 'Poppins';
+    z-index: 100;
+    text-align: center;
+}
+
+.appartmentdetail-body {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.appartmentdetail-body-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.appartmentdetail-body-left>span {
+    font-size: 25px;
+    color: #252B5C;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.appartmentdetail-location {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.appartmentdetail-location>span {
+    color: #888888;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.appartmentdetail-body-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.appartmentdetail-body-right>span:nth-child(1) {
+    color: #252B5C;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.appartmentdetail-body-right>span:nth-child(2) {
+    color: #888888;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.appartmentdetail-location-section {
+    padding-top: 20px;
+    color: #252B5C;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.appartmentdetail-location-left {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 350px;
+    color: #53587A;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.appartmentdetail-map {
+    padding-top: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.appartmentdetail-map>span {
+    background-color: #FF750426;
+    width: 100%;
+    text-align: center;
+    color: #FF7504;
+    padding: 5px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.appartmentdetail-footer {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.appartmentdetail-fotterbutton {
+    background-color: #F5F4F8;
+    height: 27px;
+    width: 102px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1F4C6B;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.Property-Ammenties {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #252B5C;
+    font-weight: 700;
+}
+
+.house-appartment {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button {
+    background-color: #234F68;
+    width: 98px;
+    height: 29px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.button2 {
+    background-color: #F5F4F8;
+    width: 98px;
+    height: 29px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #252B5C;
+}
