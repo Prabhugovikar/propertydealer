@@ -13,7 +13,8 @@ export default function Home() {
   const handleNavigate = (id) => {
     router.push(`/appartments/${id}`);
   };
-  const toggleWishlist = (id) => {
+  const toggleWishlist = (id,event) => {
+    event.stopPropagation(); 
     setRestaurants((prevRestaurants) =>
       prevRestaurants.map((restaurant) =>
         restaurant.id === id
@@ -78,7 +79,7 @@ export default function Home() {
                 <div className="mostliked-text">
                   <span>Most Liked</span>
                 </div>
-                <div className="whishlist-heart" onClick={() => toggleWishlist(item.id)}>
+                <div className="whishlist-heart" onClick={(event) => toggleWishlist(item.id,event)}>
                   {item?.whislist ? (
                     <Image src={likedwishlist} width={20} height={20} />
                   ) : (
