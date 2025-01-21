@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";  
 import appartments from "@/data/appartmentsData";
-import './appartmentDetail.css'
+// import './appartmentDetail.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/pagination';
