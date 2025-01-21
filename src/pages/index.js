@@ -1,4 +1,4 @@
-import './Home.css'
+// import './Home.css'
 import appartments from "@/data/appartmentsData";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
