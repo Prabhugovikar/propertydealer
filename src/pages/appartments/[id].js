@@ -1,10 +1,11 @@
-import { useRouter } from "next/router";  
+import { useRouter } from "next/router";
 import appartments from "@/data/appartmentsData";
 // import './appartmentDetail.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/pagination';
 import Image from "next/image";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 const AppartmentDetail = () => {
     const router = useRouter();
     const { id } = router.query;
@@ -12,8 +13,19 @@ const AppartmentDetail = () => {
     const appartmentdetail = appartments.find((item) => item.id === parseInt(id));
 
     if (!appartmentdetail) {
-        return <div>Restaurant not found</div>;
+        return <div>Home not found</div>;
     }
+
+    const containerStyle = {
+        width: "360px",
+        height: "250px",
+    };
+
+    const center = {
+        lat: 12.910437378194487,
+        lng: 77.60936476941261,
+    };
+
 
     return (
         <div className="center-wrapper">
@@ -74,7 +86,16 @@ const AppartmentDetail = () => {
                 </div>
 
                 <div className="appartmentdetail-map">
-                    <Image src={require("../../../public/Images/map.png")} width={350} height={250} />
+                    {/* <Image src={require("../../../public/Images/map.png")} width={350} height={250} /> */}
+                    <LoadScript googleMapsApiKey={'AIzaSyDgs82c1GlN8j7ADTgQAnWUtH3oo-83i9U'}>
+                        <GoogleMap
+                            mapContainerStyle={containerStyle}
+                            center={center}
+                            zoom={14}
+                        >
+                            <Marker position={center} />
+                        </GoogleMap>
+                    </LoadScript>
                     <span>View on Map</span>
                 </div>
 
