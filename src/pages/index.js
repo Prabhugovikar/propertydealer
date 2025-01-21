@@ -1,4 +1,3 @@
-import styles from "@/styles/Home.module.css";
 import './Home.css'
 import appartments from "@/data/appartmentsData";
 import React, { useState } from "react";
